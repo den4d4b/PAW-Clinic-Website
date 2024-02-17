@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Paw Clinic</title>
+    <style>
+        body {
+            font-size: 25px;
+            text-align: center;
+            background-image: linear-gradient(to right, rgb(7, 53, 26), rgb(21, 100, 67));
+        }
+
+        form {
+            width: 40%;
+            text-align: left;
+            margin-left: 30%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        fieldset {
+            background-color: rgb(254, 245, 231);
+        }
+
+        h1 {
+            color: rgb(238, 148, 25);
+        }
+
+        button {
+            border-color: rgb(238, 148, 25);
+            padding: 10px 70px;
+            width: 40%;
+            margin: auto;
+            margin-left: 28%;
+            margin-top: 2em;
+            border-radius: 1em;
+        }
+
+        button:hover {
+            color: white;
+            background-color: rgb(16, 82, 42);
+        }
+
+        .i1 {
+            width: 83%;
+        }
+
+        .i2 {
+            width: 77%;
+        }
+
+        .i3 {
+            width: 76%;
+        }
+
+        .i4 {
+            width: 65%;
+            font-size: 15px;
+        }
+
+        .i5 {
+            display: flex;
+            font-size: 20px;
+        }
+
+        .i6 {
+            width: 48%;
+        }
+
+        footer {
+            color: white;
+            font-size: 1rem;
+            font-style: italic;
+            line-height: 1.4rem;
+            margin-right: 3rem;
+        }
+
+        span {
+            float: right;
+            padding-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>MAKE AN APPOINTMENT</h1>
+        <form action="" method="post">
+            <fieldset>
+                <label for="name">Name:</label>
+                <input class="i1" type="text" id="name" name="name" required><br>
+                <label for="surname">Surname:</label>
+                <input class="i2" type="text" name="surname" id="surname" required><br>
+                <label for="email">Email:</label>
+                <input class="i1" type="email" name="email" id="email" required><br>
+                <label for="password">Password:</label>
+                <input class="i3" type="password" name="password" id="password" min="8" required>
+
+                <hr>
+
+                <label for="reference">Types of Services:</label>
+                <select name="reference" id="reference" class="i4">
+                    <option value="0">(Choose)</option>
+                    <option value="1">General and Preventative Medicine</option>
+                    <option value="1">Avian and Exotic Medicine </option>
+                    <option value="1">Laboratory</option>
+                    <option value="1">Imagenology</option>
+                    <option value="1">Surgery</option>
+                    <option value="1">Hospitalization</option>
+                </select>
+                <hr>
+                <label for="reference">Type of Pet:</label>
+                <label class="i5" for="personal">
+                    <input type="radio" class="inline" id="personal" name="personal" checked>Dog</label>
+                <label class="i5" for="personal">
+                    <input type="radio" class="inline" id="personal" name="personal">Cat</label>
+                <hr>
+                <label for="mosha">Age of the Pet(months):</label>
+                <input class="i6" type="number" min="0" required>
+            </fieldset>
+
+            <button>Submit</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
